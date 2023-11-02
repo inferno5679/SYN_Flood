@@ -39,11 +39,11 @@ def info():
     print("Enter 2 If you want to enter the Domain name of the target \n")
     choice = int(input("Enter your Choice: "))
     if choice == 1:
-        Dst = input("\nTarget IP : ")
-        dstPort = input("Target Port : ") 
+        Dst = input("\nTarget IP : ") # Example IP address : 142.250.183.132
+        dstPort = input("Target Port : ") # Example dport : 80
     elif choice == 2:
-        Dst = input("\nTarget Domain Name : ") 
-        dstPort = input("Target Port : ") 
+        Dst = input("\nTarget Domain Name : ") # Example domain name : www.google.com
+        dstPort = input("Target Port : ") # Example dport : 80
     return Dst,int(dstPort)
 try:
     Dst,dstPort = info()
